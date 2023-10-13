@@ -1,0 +1,59 @@
+/*
+filename: HomepageDescription.css
+Author: Gia Hung Tran
+StudentId: 103509199
+last date modified: 03/09/2023
+*/
+
+/* Styling for the main content container */
+.content {
+    text-align: center; /* Aligning text to the center */
+    width: 30vw; /* Setting the width to 30% of the viewport width */
+}
+
+/* Styling for the main heading */
+.intro {
+    font-family: 'Inter', sans-serif; /* Setting the font family */
+    color: white; /* Setting the text color */
+    font-size: 3rem; /* Setting the font size */
+    font-weight: 900; /* Setting the font weight to bold */
+    line-height: 130%; /* Adjusting the line height */
+    margin-bottom: 1.5rem; /* Setting the bottom margin */
+}
+
+/* Styling for the description text */
+.description {
+    margin-top: 1rem; /* Setting the top margin */
+    margin-bottom: 1rem; /* Setting the bottom margin */
+    color: #898CA9; /* Setting the text color */
+    font-family: Inter, serif; /* Setting the font family */
+    font-size: 1.7rem; /* Setting the font size */
+    font-weight: 400; /* Setting the font weight to normal */
+    line-height: 150%; /* Adjusting the line height */
+}
+
+/* Responsive styling for tablet screens */
+@media screen and (max-width: 1000px) {
+    .content {
+        width: 70vw; /* Adjusting the width for tablet screens */
+    }
+    .intro {
+        font-size: 2.5rem; /* Adjusting the font size for tablet screens */
+    }
+    .description {
+        font-size: 1.7rem; /* Adjusting the font size for tablet screens */
+    }
+}
+
+/* Responsive styling for mobile screens */
+@media screen and (max-width: 480px) {
+    .content {
+        width: 90vw; /* Adjusting the width for mobile screens */
+    }
+    .intro {
+        font-size: 1.9rem; /* Adjusting the font size for mobile screens */
+    }
+    .description {
+        font-size: 1.2rem; /* Adjusting the font size for mobile screens */
+    }
+}

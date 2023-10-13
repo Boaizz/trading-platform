@@ -1,0 +1,36 @@
+/*
+File name: ProductCreation.css
+Author: Anh Tuan Doan
+Student ID: 103526745
+Last date modified: 02/09/2023
+ */
+
+/* Styling for the heading inside the product-creation container */
+.product-creation h1 {
+    color: white;          /*Setting the text color to white */
+    margin-top: 100px;     /* Adding top margin for spacing */
+    text-align: center;    /* Center-aligning the text */
+}
+
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;  /* Full height of the viewport */
+    margin: 0;      /* Removing default body margin */
+}
+
+.center-screen button{
+    margin: 10px;
+    text-align: center;
+    width: 30vw;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4C49C5;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}

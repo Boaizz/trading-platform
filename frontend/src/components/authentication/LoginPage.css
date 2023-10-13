@@ -1,0 +1,72 @@
+/*
+filename: LoginPage.css
+Author: Gia Hung Tran
+StudentId: 103509199
+last date modified: 03/09/2023
+*/
+
+/* Main container for the login page */
+.login-page {
+    height: 100vh; /* Full viewport height */
+    background: url("../../assets/bg_login.png"); /* Background image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-size: cover; /* Stretch and scale the image to cover the container */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertically center the content */
+}
+
+/* Introduction section styling */
+.intro-login {
+    flex: 1; /* Take up all available space */
+}
+
+/* Container for the card visuals */
+.cards {
+    width: 400px; /* Fixed width */
+    margin-right: 170px; /* Spacing to its left */
+    display: flex; /* Flexbox layout for centering the image */
+    justify-content: center; /* Horizontally center the image */
+    align-items: center; /* Vertically center the image */
+    overflow: hidden; /* Clip any overflowing content */
+}
+
+/* Styling for the card visuals */
+.cards img {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Scale the image to cover the container without distortion */
+}
+
+/* Styling for the login section */
+.login-section {
+    margin-right: 10px; /* Spacing to its left */
+}
+
+/* Responsive styling for devices with a width of 1000px or less */
+@media screen and (max-width: 1000px) {
+    /* Adjustments for the main login page container */
+    .login-page {
+        flex-direction: column; /* Stack children vertically */
+        justify-content: center; /* Center content vertically */
+        align-items: center; /* Center content horizontally */
+    }
+
+    /* Hide the card visuals for smaller devices */
+    .cards {
+        display: none;
+    }
+
+    /* Adjustments for the introduction section */
+    .intro-login {
+        text-align: center; /* Center the text */
+        width: 80%; /* Occupy 80% of the viewport width */
+        margin-bottom: 20px; /* Spacing below the section */
+    }
+
+    /* Adjustments for the login section */
+    .login-section {
+        text-align: center; /* Center the text */
+        width: 80%; /* Occupy 80% of the viewport width */
+        margin-bottom: 20px; /* Spacing below the section */
+    }
+}

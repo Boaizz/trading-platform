@@ -1,0 +1,8 @@
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Full height of the viewport */
+    margin: 0;      /* Removing default body margin */
+    color: white;
+}

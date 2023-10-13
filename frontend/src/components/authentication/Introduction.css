@@ -1,0 +1,54 @@
+/*
+filename: Introduction.css
+Author: Gia Hung Tran
+StudentId: 103509199
+last date modified: 03/09/2023
+*/
+
+/* Main container for the introduction section */
+.wrapper-intro {
+    width: 35vw; /* Width relative to the viewport width */
+    height: 30vh; /* Height relative to the viewport height */
+    text-align: center; /* Centering the text */
+    display: grid; /* Using grid layout */
+    place-items: center; /* Centering items both horizontally and vertically */
+    padding: 10px; /* Padding around the container */
+    color: #FFF; /* Text color */
+    margin: 20px; /* Margin around the container */
+}
+
+/* Styling for the logo or image in the introduction section */
+.img-login {
+    width: 70px; /* Fixed width */
+    height: 70px; /* Fixed height */
+    background-color: white; /* Background color */
+    background-image: url("../../assets/logo.png"); /* Background image (logo) */
+    background-size: cover; /* Cover the entire element with the image */
+    background-position: center; /* Center the background image */
+    border-radius: 50%; /* Making the image circular */
+}
+
+/* Styling for the welcome text */
+.welcome {
+    font-size: 1.5rem; /* Font size */
+    font-weight: 200; /* Font weight (light) */
+}
+
+/* Styling for the platform description */
+.platform-description {
+    font-size: 1.5rem; /* Font size */
+    font-weight: 200; /* Font weight (light) */
+}
+
+/* Styling for the "next-gen" text within the platform description */
+.platform-description span {
+    font-weight: 900; /* Font weight (bold) */
+}
+
+/* Responsive styling for devices with a width of 1000px or less */
+@media screen and (max-width: 1000px) {
+    .wrapper-intro {
+        width: 80%; /* Adjusting width for smaller screens */
+        height: auto; /* Adjusting height based on content */
+    }
+}

@@ -1,0 +1,126 @@
+/*
+* File name: Filter.css
+* Author: Dang Khanh Toan Nguyen
+* StudentID: 103797499
+* Last date modified: 03/09/2023
+* */
+/* Styling for the filter popup */
+.filter-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100vh;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Styling for the filter container */
+.filter-container {
+    border-radius: 1.875rem;
+    background: #3D3E51;
+    width: 25rem;
+    height: 28rem;
+    color: white;
+}
+/* Styling for the heading inside the filter container */
+.filter-container h2 {
+    text-align: center;
+    font-weight:600;
+}
+/* Styling for filter section */
+.filter {
+    padding-top:20px;
+    margin: 20px;
+}
+/* Styling for filter headings */
+.filter h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top:20px;
+}
+/* Styling for filter item container */
+.filter-item-container {
+    margin-top:20px;
+}
+
+/* Styling for filter headings */
+.filter h3 {
+    font-size: 1.25rem;
+    font-weight:400;
+}
+/* Styling for filter item container */
+.filter-item-container label {
+    width:10%;
+}
+/* Styling for filter range input */
+.filter-item-container input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 60%;
+
+    outline: none;
+    height: 5px;
+    background: white;
+    border-radius: 1rem;
+}
+
+/* Styling for range input thumb */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    border: 4px solid #3D5AF1;
+    cursor: pointer;
+
+}
+/* Styling for slider container */
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+/* Styling for slider labels */
+.slider-container p {
+    width:17%;
+}
+
+/* Styling for datepicker container */
+.datepicker-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+/* Styling for category container */
+.category-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Styling for buttons */
+.buttons {
+    float: right;
+
+}
+/* Styling for buttons within the container */
+.buttons button {
+    margin-top: 20px ;
+}
+/* Media query for smaller screens */
+@media (max-width: 420px) {
+    .filter-container {
+        width: 22rem;
+    }
+}
+.category-input{
+    border-radius: 5px;
+    min-height: 20px;
+    padding: 3px;
+}

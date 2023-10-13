@@ -1,0 +1,62 @@
+/*
+File name: Product.css
+Author: Anh Tuan Doan
+Student ID: 103526745
+Last date modified: 02/09/2023
+ */
+
+/*
+ * Styling for the product's image container.
+ */
+ .product-image {
+    height: 70%;
+    text-align: center;
+    padding: 10px;
+}
+
+/* 
+ * Styling for the product's image.
+ */
+.product-image img {
+    height: 100%;
+    width: 100%;
+    /* Ensuring the image covers the entire container without distortion */
+    object-fit: cover;
+    object-position: 50% 50%;
+    /* Rounded corners for the image */
+    border-radius: 1.25rem;
+}
+
+/* 
+ * Styling for the container holding the product's information.
+ */
+.product-information {
+    margin: 5px 20px;
+}
+
+/* 
+ * Styling for the product's title.
+ */
+.product-information h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* 
+ * Styling for the product's price.
+ */
+.product-price {
+    color: #23D2E2 !important;
+    font-size: 1.25rem;
+}
+
+/* 
+ * Styling for the other product details.
+ */
+.product-information p {
+    margin-top: 8px;
+    margin-bottom: 2px;
+    color: #CFC8C8;
+}

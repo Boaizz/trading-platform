@@ -1,0 +1,87 @@
+/*
+filename: Description.css
+Author: Gia Hung Tran
+StudentId: 103509199
+last date modified: 03/09/2023
+*/
+/* Main container for the product description */
+.wrapper-description{
+    width: 50%;
+    color: #FFF;
+    margin: 50px;
+}
+
+/* Flex container for product name and price */
+.container-brief{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* Styling for the product name */
+.item-name{
+    font-size: 2rem;
+    font-weight: 800;
+    display: inline-block;
+}
+
+/* Styling for the product price */
+.item-price{
+    font-size: 2rem;
+    font-weight: 700;
+    display: inline-block;
+}
+
+/* Margin for the seller's name */
+.item-owner{
+    margin-bottom: 7px;
+}
+
+/* Styling for the product description text */
+.item-description{
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+/* Container for the buy button */
+.container-button{
+    position: relative;
+}
+
+/* Positioning the buy button to the right */
+.wrapper-description button {
+    float:right;
+}
+
+/* Media query for tablet screens */
+@media screen and (max-width: 820px) {
+    .wrapper-description {
+        width: 70%;
+    }
+    .item-description {
+        font-size: 1.3rem;
+    }
+    .container-button {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 480px) {
+    .wrapper-description {
+        width: 90%;
+    }
+    .item-description{
+        font-size: 1rem;
+    }
+    .container-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,55 @@
+/*
+* File name: Cart.css
+* Author: Dang Khanh Toan Nguyen
+* StudentID: 103797499
+* Last date modified: 03/09/2023
+* */
+/* Styling for the header inside the cart body */
+.cart-body h1 {
+    color: white;
+    text-align: center;
+    margin-top:100px;
+}
+.error-heading{
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+}
+/* Styling for the main cart body */
+.cart-body {
+    margin: 5vw;
+}
+/* Styling for the checkout button */
+.checkout {
+    float: right;
+    margin-right: 3vw;
+    margin-bottom:20px;
+    margin-top:10px;
+}
+/* Styling for the total price display */
+.cart-body > h2 {
+    color: white;
+    text-align:right;
+    margin-right: 3vw;
+
+}
+.center-screen-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40vh;  /* Full height of the viewport */
+    margin: 0;      /* Removing default body margin */
+}
+
+.btn-container{
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+.btn-container h2{
+    margin: 20px;
+}

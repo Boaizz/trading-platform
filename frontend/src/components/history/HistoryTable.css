@@ -1,0 +1,153 @@
+/*
+File name: HistoryTable.css
+Author: Anh Tuan Doan
+Student ID: 103526745
+Last date modified: 02/09/2023
+ */
+
+/* Setting the font for the history section */
+.history {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Styling for the history title */
+.history h1 {
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+
+/* Styling for the table container */
+.table-container {
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* General table styling */
+.history table {
+    border-collapse: collapse;
+    background-color: #171c28;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Styling for table headers */
+.history table th {
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+
+/* Styling for table data cells */
+.history table td {
+    font-weight: 200;
+}
+
+/* Common padding for table headers and data cells */
+.history table th, .history table td {
+    padding: 1rem 5vw;
+    border-bottom: 1px solid;
+}
+
+/* Styling for status labels within the table */
+.history table .status {
+    border-radius: 2rem;
+    background-color: red;
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
+/* Specific styles for different transaction statuses */
+.history table .status-pending {
+    background-color: #fff0c2;
+    color: #a68b00;
+}
+.history table .status-valid {
+    background-color: #c8e6c9;
+    color: #388e3c;
+}
+.history table .status-invalid {
+    background-color: #ffcdd2;
+    color: #c62828;
+}
+
+/* Responsive styles for medium-sized screens */
+@media (max-width: 700px) {
+    .history table th, .history table td {
+        padding: 1rem 2vw;
+    }
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+    /* Hiding the table headers for smaller screens */
+    .history table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    /* Adjusting table rows for smaller screens */
+    .history table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: 1rem;
+        background-color: #3D3E51;
+    }
+
+    /* Adjusting table data cells for smaller screens */
+    .history table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+
+    /* Displaying data labels before the actual data on smaller screens */
+    .history table td::before {
+        content: attr(data-label);
+        float: left;
+        margin-right: 15rem;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+    /* Adjusting status labels for smaller screens */
+    .status {
+        padding: 0 !important;
+        margin: 0 !important;
+        background-color: transparent !important;
+        text-align: right !important;
+    }
+}
+
+/* ... your other styles ... */
+.history table input{
+    border-radius: 2rem;
+    background-color: grey;
+    padding: 10px;
+    text-align: center;
+}
+.hash-input {
+    width: 80px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.hash-input::-webkit-scrollbar {
+    display: none;  /* Hide the scrollbar in Webkit browsers */
+}
+
+.hash-input:focus {
+    outline: none;  /* Optionally, you can remove the blue outline on focus */
+}

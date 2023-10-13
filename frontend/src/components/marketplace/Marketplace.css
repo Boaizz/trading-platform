@@ -1,0 +1,54 @@
+/*
+File name: Marketplace.css
+Author: Anh Tuan Doan
+Student ID: 103526745
+Last date modified: 02/09/2023
+ */
+
+/* Styling for the main body of the marketplace */
+.marketplace-body {
+    margin: 5vw;
+}
+
+/* Styling for the marketplace title */
+.marketplace h1 {
+    color: white;
+    text-align: center;
+}
+
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Full height of the viewport */
+    margin: 0;      /* Removing default body margin */
+    color: white;
+}
+
+/* Styling for the filter icon */
+.icon-filter {
+    /* Makes the icon clickable */
+    cursor: pointer;  
+    width: 35px;
+    height: auto;
+    /* Absolute positioning within its relative parent */
+    position: absolute;  
+    /* Positioned to the right */
+    right: 4%;  
+    /* Inverting the colors of the icon for better visibility */
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+/* Styling for the container holding the title and filter icon */
+.container {
+    /* Using flexbox for layout */
+    display: flex;  
+    /* Centering items horizontally */
+    justify-content: center;  
+    /* Centering items vertically */
+    align-items: center;  
+    /* Setting to relative so that child elements can be positioned absolutely */
+    position: relative;  
+    /* Top margin for spacing */
+    margin-top: 100px;  
+}

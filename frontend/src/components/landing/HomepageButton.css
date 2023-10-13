@@ -1,0 +1,42 @@
+/*
+filename: HomepageButton.css
+Author: Gia Hung Tran
+StudentId: 103509199
+last date modified: 03/09/2023
+*/
+
+/* Styling for the Ethereum sign-in button */
+.ethereum-button {
+    cursor: pointer; /* Changing the cursor to a hand pointer on hover */
+    border-radius: 0.5rem; /* Rounded corners for the button */
+    border: 1.5px solid #2B1EBC; /* Border styling */
+    padding: 15px; /* Padding around the button */
+    padding-top: 3px; /* Top padding for the button */
+    text-align: center; /* Aligning text to the center */
+    text-decoration: none; /* Removing any text decoration */
+    /* Gradient background for the button */
+    background: linear-gradient(90deg, rgba(247,203,191,1) 0%, rgba(164,252,245,1) 27%, rgba(112,147,218,1) 70%, rgba(205,175,250,1) 83%);
+    color: #2B1EBC; /* Text color */
+    font-family: Inter; /* Setting the font family */
+    font-size: 1.2rem; /* Setting the font size */
+    font-weight: 600; /* Setting the font weight to semi-bold */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow to the button */
+    transition: transform 0.35s ease; /* Smooth transition effect for hover and active states */
+}
+
+/* Hover effect for the Ethereum button */
+.ethereum-button:hover {
+    transform: translateY(-5px) scale(1.05); /* Slightly lifting and scaling the button on hover */
+}
+
+/* Active (pressed) effect for the Ethereum button */
+.ethereum-button:active {
+    transform: scale(1); /* Resetting the scale when the button is pressed */
+}
+
+/* Styling for the Ethereum logo image */
+.icon-image {
+    position: relative; /* Setting the position to relative */
+    top: 10px; /* Adjusting the vertical position of the image */
+    padding-right: 10px; /* Adding some space to the right of the image */
+}

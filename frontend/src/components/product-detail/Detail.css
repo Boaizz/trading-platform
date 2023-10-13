@@ -1,0 +1,111 @@
+/*
+filename: Detail.css
+Author: Gia Hung Tran
+StudentId: 103509199
+last date modified: 03/09/2023
+*/
+
+/*
+   Main container for the product details.
+   It uses a flexbox layout to position its children side by side.
+*/
+.wrapper-info {
+    display: flex;
+    height: 100vh; /* Takes up the full viewport height */
+    width: 100vw; /* Takes up the full viewport width */
+    flex-wrap: wrap; /* Allows the flex items to wrap onto multiple lines if necessary */
+    margin-top: 100px; /* Adds spacing from the top */
+}
+
+/* 
+   Styling for the container that holds the product image.
+   It's designed to be centered and responsive.
+*/
+.container-img {
+    margin: auto; /* Centers the container */
+    flex: 1; /* Allows the container to grow and take up available space */
+    max-width: 40vw; /* Maximum width is 40% of the viewport width */
+    max-height: 80vh; /* Maximum height is 80% of the viewport height */
+    margin-top: 40px; /* Adds spacing from the top */
+    margin-left: 40px; /* Adds spacing from the left */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures content doesn't spill outside the container */
+    text-align: center; /* Centers the content horizontally */
+    order: 0; /* Position in the flex container */
+}
+
+/* 
+   Styling for the actual product image.
+   It's designed to be fully responsive and adjust based on the container's size.
+*/
+.container-img img {
+    width: 100%; /* Image takes up the full width of its container */
+    height: auto; /* Height is adjusted automatically to maintain aspect ratio */
+}
+
+/* 
+   Styling for the product description container.
+   It's designed to be flexible and adjust based on the available space.
+*/
+.description-tag {
+    flex: 1; /* Allows the container to grow and take up available space */
+    order: 1; /* Position in the flex container */
+}
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Full height of the viewport */
+    margin: 0;      /* Removing default body margin */
+}
+.error-message{
+    color: white;
+    margin-left: 5px;
+    font-size: 2rem;
+}
+/* 
+   Media query for mobile screens.
+   Adjusts the layout and styling for screens with a maximum width of 480px.
+*/
+@media screen and (max-width: 480px) {
+    .wrapper-info {
+        align-items: center; /* Centers the flex items vertically */
+    }
+
+    .container-img,
+    .description-tag {
+        margin: auto; /* Centers the containers */
+        flex-basis: 100%; /* Each container takes up the full width of its parent */
+        text-align: center; /* Centers the content horizontally */
+    }
+
+    .container-img {
+        order: -1; /* Changes the position in the flex container */
+        max-width: 80vw; /* Maximum width is 80% of the viewport width */
+        height: auto; /* Height is adjusted automatically */
+    }
+}
+
+/* 
+   Media query for tablet screens.
+   Adjusts the layout and styling for screens with a width between 481px and 820px.
+*/
+@media screen and (max-width: 820px) and (min-width: 481px) {
+    .wrapper-info {
+        flex-direction: column; /* Stacks the flex items vertically */
+        align-items: center; /* Centers the flex items horizontally */
+    }
+
+    .container-img,
+    .description-tag {
+        margin: auto; /* Centers the containers */
+        text-align: center; /* Centers the content horizontally */
+    }
+
+    .container-img {
+        max-width: 80vw; /* Maximum width is 80% of the viewport width */
+        height: auto; /* Height is adjusted automatically */
+        display: flex; /* Uses a flexbox layout for its children */
+        align-items: center; /* Centers the flex items vertically */
+    }
+}

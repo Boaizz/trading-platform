@@ -1,0 +1,17 @@
+/*
+File name: Button.css
+Author: Anh Tuan Doan
+Student ID: 103526745
+Last date modified: 02/09/2023
+ */
+
+.button {
+    width: 100px;
+    height: 40px;
+    border-radius: 0.5rem;
+    background: #615DFA;
+    border: none;
+    color: white;
+    font-size:1rem;
+    cursor: pointer;
+}

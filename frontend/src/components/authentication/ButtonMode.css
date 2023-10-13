@@ -1,0 +1,119 @@
+/*
+filename: ButtonMode.css
+Author: Gia Hung Tran
+StudentId: 103509199
+last date modified: 03/09/2023
+*/
+
+/* Container for the Login and Register buttons */
+.button-group {
+    display: flex; /* Flexbox layout for horizontal alignment */
+    margin-top: 20px; /* Spacing above the container */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: space-between; /* Space out the buttons */
+    width: 50%; /* Half of the parent container's width */
+}
+
+/* Base styling for both buttons */
+.btn {
+    padding: 10px 20px; /* Padding around the text */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Indicate clickability */
+    font-size: 20px; /* Font size */
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+    width: 100%; /* Full width of the container */
+    border: solid white 1px; /* White border around the button */
+    flex: 1; /* Allow the button to grow and occupy available space */
+    background-color: #580A88; /* Default background color */
+    color: white; /* Text color */
+}
+
+/* Styling for the active button */
+.active {
+    background-color: #615DFA; /* Highlight color for the active button */
+}
+
+/* Hover effect for the buttons */
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Specific styling for the Login button */
+.login-btn {
+    border-top-left-radius: 10px; /* Rounded top-left corner */
+    border-bottom-left-radius: 10px; /* Rounded bottom-left corner */
+}
+
+/* Specific styling for the Register button */
+.register-btn {
+    border-top-right-radius: 10px; /* Rounded top-right corner */
+    border-bottom-right-radius: 10px; /* Rounded bottom-right corner */
+}
+
+/* Responsive styling for medium-sized screens (like tablets) */
+@media (max-width: 1380px) {
+    /* Adjustments for the Login button */
+    .login-btn {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+    
+    /* Adjustments for the Register button */
+    .register-btn {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+}
+
+/* Responsive styling for smaller screens */
+@media screen and (max-width: 1000px) {
+    /* Adjustments for both buttons */
+    .btn {
+        font-size: 18px; /* Slightly smaller font size */
+        padding: 8px 16px; /* Adjusted padding */
+    }
+
+    /* Adjustments for the Login button */
+    .login-btn {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    
+    /* Adjustments for the Register button */
+    .register-btn {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
+/* Adjustments for mobile screens */
+@media screen and (max-width: 480px) {
+    /* Adjustments for the button container */
+    .button-group {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    /* Adjustments for the Login button */
+    .login-btn {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+    
+    /* Adjustments for the Register button */
+    .register-btn {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+}

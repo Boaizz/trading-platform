@@ -1,0 +1,94 @@
+/*
+File name: ProductForm.css
+Author: Anh Tuan Doan
+Student ID: 103526745
+Last date modified: 02/09/2023
+ */
+
+/* Styling for the main product form */
+.product-form {
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Common styles for input and textarea elements inside the product form */
+.product-form input,
+.product-form textarea {
+    margin-bottom: 30px;
+}
+
+.error-notice{
+    margin: 5px;
+    text-align: center;
+    color: #FF6969;
+}
+
+/* Styling for the submit button inside the product form */
+.product-form button {
+    margin-top: 40px;
+    width: 100px;
+    height: 40px;
+    float: right;
+    border-radius: 1.25rem;
+    background: #615DFA;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Styling for images inside the product form */
+.product-form img {
+    object-fit: cover;
+}
+
+/* Class to hide elements */
+.hide {
+    display: none;
+}
+
+/* Responsive styles for screens with a width of up to 1200px */
+@media (max-width: 1200px) {
+    .product-form {
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Styling for the image input on smaller screens */
+    .product-form .image-input {
+        order: 1; /* This ensures the image input is at the top */
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        width: 80vw;
+    }
+
+    /* Styling for the text input fields on smaller screens */
+    .product-form .text-input {
+        order: 2; /* This ensures the text inputs are at the bottom */
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Spacing between the inputs */
+    }
+
+    /* Styling for the submit button on smaller screens */
+    .product-form input[type=submit] {
+        float: none; /* Remove the float */
+        margin-top: 20px;
+    }
+}
+
+/* Responsive styles for screens with a width of up to 425px */
+@media (max-width: 425px) {
+    .product-form {
+        margin-top: 22%;
+        flex-direction: column;
+        align-items: center;
+    }
+}

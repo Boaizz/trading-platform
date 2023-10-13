@@ -1,0 +1,70 @@
+/*
+File name: Input.css
+Author: Anh Tuan Doan
+Student ID: 103526745
+Last date modified: 02/09/2023
+ */
+
+/* Styling for the main container of the input form */
+.form-input {
+    font-family: Roboto, sans-serif; /* Setting the font family */
+    display: inline-block; /* Making the container inline-block */
+    width: 100%; /* Taking full width of its parent container */
+}
+
+/* Styling for the label inside the form-input container */
+.form-input label {
+    color: white;
+    font-weight: 700;
+    float:left; /* Floating the label to the left */
+}
+
+/* Common styling for both input fields and textarea inside the form-input container */
+.form-input input,
+textarea
+{
+    box-sizing: border-box;
+    width: 100%;
+    font-family: Roboto, sans-serif;
+    margin-top:10px;
+    background-color: #3D3E51;
+    height: 3rem;
+    border-radius: 1.25rem;
+    border :none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Specific styling for textarea */
+textarea {
+    height: 15rem;
+    padding-top:20px;
+}
+
+/* Hiding the default file input */
+input[type=file] {
+    display: none;
+}
+
+/* Styling for the label inside the image-input container */
+.image-input label {
+    width: 100%; /* Taking full size of its parent container */
+    height: 100%;
+    cursor: pointer; /* Changing the cursor to pointer on hover */
+    text-align: center; /* Centering the text */
+    align-content: center; /* Aligning the content to the center */
+    display: flex;
+    justify-content: center; /* Centering items horizontally */
+    flex-direction: column;/* Stacking items vertically */
+    color: white;
+}
+
+/* Styling for the image-input container */
+.image-input {
+    height: 350px;
+    width: 350px;
+    border: 2px dashed #3D3E51; /* Setting a dashed border */
+}

@@ -1,0 +1,48 @@
+/*
+File name: CheckoutForm.css
+Author: Dang Khanh Toan Nguyen
+StudentID: 103797499
+Last date modified: 03/09/2023
+*/
+
+/* Styling for the entire modal overlay */
+.checkout-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100vh;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Styling for the form container */
+.checkout {
+    background-color: #4f4f62;
+    width:40vw;
+    min-width: 250px;
+    border-radius: 1.25rem;
+    padding:40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Styling for purchase and cancel buttons */
+.purchase-button, .cancel-button {
+    margin:20px 10px;
+}
+/* Styling for the cancel button */
+.cancel-button {
+    background-color: brown;
+}
+/* Styling for form input elements */
+.checkout-form .form-input {
+    margin-bottom: 20px;
+}
+.succes-notice{
+    margin: 5px;
+    text-align: center;
+    color: #B5CB99;
+}

@@ -1,0 +1,25 @@
+/*
+File name: ProductList.css
+Author: Anh Tuan Doan
+Student ID: 103526745
+Last date modified: 02/09/2023
+ */
+
+
+/*
+ * Styling for the main container that holds the list of products.
+ */
+ .product-list {
+    /* Using flexbox for layout */
+    display: flex;          
+    /* Adding margin for spacing */
+    margin: 20px;           
+    /* Allowing the items to wrap onto the next line */
+    flex-wrap: wrap;        
+    /* Gap between each product */
+    gap: 3vw;               
+    /* Evenly distributing the space between the products */
+    justify-content: space-evenly; 
+    /* Setting a minimum width for the container */
+    min-width: 40vw;        
+}

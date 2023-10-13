@@ -1,0 +1,21 @@
+/*
+File name: ProductCard.css
+Author: Anh Tuan Doan
+Student ID: 103526745
+Last date modified: 02/09/2023
+ */
+/*
+ * Styling for the product card container.
+ */
+ .product-card {
+    /* Setting the width and height for the card */
+    width: 17vw;
+    height: 27vw;
+    /* Defining minimum width and height to ensure the card remains readable and usable on smaller screens or when content is less */
+    min-width: 200px;
+    min-height: 370px;
+    /* Rounded corners for the card */
+    border-radius: 1.25rem;
+    /* Background color for the card */
+    background: #1d2333;
+}

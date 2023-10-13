@@ -1,0 +1,19 @@
+/*
+filename: Landing.css
+Author: Gia Hung Tran
+StudentId: 103509199
+last date modified: 03/09/2023
+*/
+
+/* Styling for the homepage container */
+.homepage {
+    padding: 0; /* no space between elements */
+    display: flex; /* Using flexbox for layout */
+    justify-content: center; /* Centering content horizontally */
+    align-items: center; /* Centering content vertically */
+    height: 100vh; /* Setting the height to 100% of the viewport height */
+    text-align: center; /* Aligning text to the center */
+    background: url("../../assets/hp_bg.png"); /* Setting a background image for the homepage */
+    background-repeat: no-repeat; /* Ensuring the background image doesn't repeat */
+    background-size: cover; /* Making sure the background image covers the entire container */
+}

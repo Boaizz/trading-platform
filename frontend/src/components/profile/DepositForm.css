@@ -1,0 +1,93 @@
+/*
+File name: CheckoutForm.css
+Author: Dang Khanh Toan Nguyen
+StudentID: 103797499
+Last date modified: 03/09/2023
+*/
+
+/* Styling for the entire modal overlay */
+.checkout-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100vh;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Styling for the form container */
+.checkout {
+    background-color: #4f4f62;
+    width:40vw;
+    min-width: 250px;
+    border-radius: 1.25rem;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Styling for purchase and cancel buttons */
+.purchase-button, .cancel-button {
+    margin:20px 10px;
+}
+/* Styling for the cancel button */
+.cancel-button {
+    background-color: brown;
+}
+/* Styling for form input elements */
+.checkout-form .form-input {
+    margin-bottom: 20px;
+}
+.succes-notice{
+    margin: 5px;
+    text-align: center;
+    color: #B5CB99;
+}
+
+.header-deposit{
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+.label-ipt{
+    color: white;
+    font-weight: 700;
+    float: left; /* Floating the label to the left */
+}
+
+.wrapper-ipt
+{
+    font-family: Roboto, sans-serif; /* Setting the font family */
+    display: inline-block; 
+    width: 100%; /* Taking full width of its parent container */
+    margin: 2px;
+    margin-top: 17px;
+}
+
+.deposit-ipt{
+    box-sizing: border-box;
+    width: 100%;
+    font-family: Roboto, sans-serif;
+    margin-top:10px;
+    background-color: #3D3E51;
+    height: 2rem;
+    border-radius: 1.25rem;
+    border :none;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 300;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.half {
+    width: 43%; /* slightly less than half to account for any potential margins or paddings */
+}
